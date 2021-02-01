@@ -1,0 +1,7 @@
+RegisterServerEvent('SRP:LogClientError')
+AddEventHandler('SRP:LogClientError', function(resource, ...)
+    local resource = GetCurrentResourceName()
+    print("------------------ ERROR IN RESOURCE: " .. resource)
+    print(...)
+    print("------------------ END OF ERROR")
+end)
